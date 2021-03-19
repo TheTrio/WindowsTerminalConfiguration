@@ -1,0 +1,152 @@
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "copyOnSelect": true,
+    "copyFormatting": false,
+    "tabWidthMode": "titleLength",
+    "initialCols": 110,
+    "initialRows": 30,
+    "profiles": {
+        "defaults": {
+            "fontFace": "Cascadia Code PL",
+            "colorScheme": "Ubuntu",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.8,
+            "cursorShape": "filledBox",
+            "suppressApplicationTitle": true,
+            "backgroundImage": "ms-appdata:///roaming/image.jpg",
+            "backgroundImageStretchMode": "uniformToFill",
+            "backgroundImageOpacity": 0.3
+        },
+        "list": [
+            {
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "WindowsPowerShell",
+                "commandline": "powershell.exe",
+                "startingDirectory": "P:/Projects",
+                "colorScheme": "Ubuntu",
+                "hidden": false
+            },
+            {
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "CommandPrompt",
+                "commandline": "cmd.exe",
+                "hidden": true
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "AzureCloudShell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04",
+                "startingDirectory": "//wsl$/Ubuntu-20.04/home/shashwat/",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{ce5b5ca6-7f18-4f7f-a946-34f24b28f07f}",
+                "hidden": false,
+                "name": "GitBash",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe --login",
+                "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "name": "Ubuntu",
+            "black": "#2e3436",
+            "red": "#cc0000",
+            "green": "#4e9a06",
+            "yellow": "#c4a000",
+            "blue": "#3465a4",
+            "purple": "#75507b",
+            "cyan": "#06989a",
+            "white": "#d3d7cf",
+            "brightBlack": "#555753",
+            "brightRed": "#ef2929",
+            "brightGreen": "#8ae234",
+            "brightYellow": "#fce94f",
+            "brightBlue": "#729fcf",
+            "brightPurple": "#ad7fa8",
+            "brightCyan": "#34e2e2",
+            "brightWhite": "#eeeeec",
+            "background": "#300a24",
+            "foreground": "#BFBFBD"
+        }
+    ],
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "vertical",
+                "profile": "default"
+            },
+            "keys": "ctrl+right"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal"
+            },
+            "keys": "ctrl+down"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto"
+            },
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": "newTab",
+            "keys": "ctrl+T"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+D"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "profile": "WindowsPowerShell"
+            },
+            "keys": "ctrl+1"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "profile": "Ubuntu-20.04"
+            },
+            "keys": "ctrl+2"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "profile": "GitBash"
+            },
+            "keys": "ctrl+3"
+        }
+    ]
+}
