@@ -1,4 +1,4 @@
-![Screenshot of my Windows Terminal](WindowsTerminal.png)
+![Screenshot of my Windows Terminal](WindowTerminal.png)
 
 Install Windows Terminal from the [Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701). 
 
