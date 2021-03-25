@@ -10,6 +10,10 @@
 4. Copy my settings to your `settings.json`. To open your settings file, press `Ctrl+,` after opening WindowsTerminal. Note: If you used a different font than mine, remember to change the `fontFace` property in your `settings.json` 
 5. That's it! Just restart your terminal or do `source ~/.bashrc` and you should be good to go!
 
+## Optional 
+
+1. Install neofetch to get your system information in a cool looking way. To install, type `sudo apt install neofetch` in your terminal. I also like having an alias for `neofetch` as `nf`. For that, just add the line `alias nf="neofetch"` to your `.bash_aliases` under `/home/yourUsername`
+2. `neofetch` also allows you to have custom ascii art. While you can make your own ASCII art from scratch, you can also download them from [ASCII Art Archive](https://www.asciiart.eu/). From here, find the ASCII art you like the most. Save that in a file, and let `neofetch` know to use it by typing `neofetch --source pathToFile`. To make this the default behavior for neofetch, just edit the value of the alias `nf`. 
 
 Install Windows Terminal from the [Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701). 
 
